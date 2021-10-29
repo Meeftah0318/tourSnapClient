@@ -1,0 +1,12 @@
+.footer-link div a {
+  text-decoration: none;
+  color: lightgray;
+}
+
+.footer-link div a:hover {
+  color: #198754;
+}
+
+.social-icon i:hover {
+  color: #198754;
+}
