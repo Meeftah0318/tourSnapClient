@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "destination": "Rome",
+    "details": "We have the best Certified dentists, who can diagnose and treat oral health conditions of your teeth, gums, tongue, and mouth. Come for a full dental checkup and smile with confidence.",
+    "price": 500,
+    "country": "Italy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/20190406-DSC5193_Panteon.jpg/800px-20190406-DSC5193_Panteon.jpg"
+  },
+  {
+    "id": 2,
+    "destination": "New York",
+    "details": "Our Cardiologists are doctors who specialize in diagnosing and treating diseases or conditions of the heart and blood vessels—the cardiovascular system.",
+    "price": 600,
+    "country": "USA",
+    "image": "https://image.freepik.com/free-photo/statue-liberty-new-york-city-skyline-usa_268835-777.jpg"
+  },
+  {
+    "id": 3,
+    "destination": "Paris",
+    "details": "Illnesses, disorders, and injuries that involve the nervous system often require a neurologist’s management and treatment. We got you covered with the best known doctors availale always.",
+    "price": 450,
+    "country": "France",
+    "image": "https://image.freepik.com/free-photo/amazing-shot-louvre-paris-france_181624-44756.jpg"
+  },
+  {
+    "id": 4,
+    "destination": "Berlin",
+    "details": "A dermatologist is a type of doctor that diagnoses and treats conditions that affect your hair, skin, and nails. They also treat conditions that affect mucous membranes, or the delicate tissue that lines your nose, mouth, and eyelids.",
+    "price": 550,
+    "country": "Germany",
+    "image": "https://img.freepik.com/free-photo/full-tourists-enjoy-visiting-berlin-cathedral-berliner-dome-daytime-berlin-germany_109442-12.jpg?size=338&ext=jpg"
+  },
+  {
+    "id": 5,
+    "destination": "Stockholm",
+    "details": "We deal with a wide range of issues, including obstetrics, or pregnancy and childbirth, menstruation and fertility issues, sexually transmitted infections (STIs), hormone disorders, and others.",
+    "price": 450,
+    "country": "Sweden",
+    "image": "https://img.freepik.com/free-photo/gamla-stan-old-part-stockholm_136401-2873.jpg?size=338&ext=jpg"
+  },
+  {
+    "id": 6,
+    "destination": "Rio De Janeiro",
+    "details": "Our Nutritionists are the heart of a patient's health by using their knowledge of the science of food to help individuals and groups make the right choices about what they eat.",
+    "price": 480,
+    "country": "Brazil",
+    "image": "https://image.freepik.com/free-photo/river-foggy-mountains-landscape_1204-511.jpg"
+  }
+]

@@ -1,7 +1,8 @@
 import React from "react";
-import Team from "../../Team/Team";
-import Services from "../Services/Services";
-import Testimonial from "../Testitomial/Testimonial";
+import { Link } from "react-router-dom";
+import Newsletter from "../Newsletter/Newsletter";
+import Packages from "../Packages/Packages";
+import Testimonials from "../Testimonials/Testimonials";
 import "./Home.css";
 
 const Home = () => {
@@ -9,25 +10,33 @@ const Home = () => {
     <div>
       {/* banner  */}
       <div className="banner-container">
-        <div className="banner">
-          <div className="w-75 mx-auto row ">
-            <div className="col-md-8 mt-5 pt-5">
+        <div className="banner pt-5">
+          <div className="w-75 mx-auto pt-5 text-center">
+            <div className="pt-5">
               {/* banner text */}
               <h1 className="fs-1">
-                ALL YOUR <span className="pe-3 ">HEALTHCARE</span> NEEDS <br />
-                IN ONE SINGLE PLACE
+                Let,s Take a{" "}
+                <span className="px-3 bg-primary rounded">BREAK</span> From Busy
+                Life
+                <br />
+                Let's Go Somewhere <br />
+                Calm & Quiet.
               </h1>
-              <p className="w-75">
-                Visiting healthcare centers are quite time consuming, thus, we
-                are here to support you with all your healthcare needs under one
-                roof. Book an appointment today for your check-ups, or just pass
-                by at our drop-in champers,{" "}
+              <p className="text-center mt-4">
+                Just Book Your destination, We Take Care of The Rest
               </p>{" "}
-              <h3>As simple as that.</h3>
+              <Link to="packages">
+                <button className="btn btn-primary rounded-pill px-5 mt-4">
+                  Book Now
+                </button>
+              </Link>
             </div>
-            {/* banner cards */}
-            <div className="col-md-4 mt-5">
-              <div className="d-flex my-3 p-3 banner-card">
+          </div>
+
+          {/* <div className="w-75 mx-auto"> */}
+          {/* banner cards */}
+          {/* <div className=" mt-5 row">
+              <div className="col-md-6 d-flex my-3 p-3 banner-card">
                 <div className="my-auto fs-1 me-4">
                   <i class="far fa-clock"></i>
                 </div>
@@ -36,7 +45,10 @@ const Home = () => {
                   <p>Dont worry about the time, we are always available</p>
                 </div>
               </div>
-              <div className="d-flex my-3 p-3 banner-card">
+              <div
+                className="col-md-6 
+              d-flex my-3 p-3 banner-card"
+              >
                 <div className="my-auto fs-1 me-4">
                   <i class="fas fa-mobile-alt"></i>
                 </div>
@@ -47,17 +59,16 @@ const Home = () => {
                   </p>
                 </div>
               </div>
-            </div>
-          </div>
+            </div> */}
+          {/* </div> */}
         </div>
       </div>
-      {/* banner ends  */}
-      {/* services  */}
-      <Services></Services>
-      {/* teams */}
-      <Team></Team>
+      {/* banner stop  */}
+      <Packages></Packages>
       {/* testimonials */}
-      <Testimonial></Testimonial>
+      <Testimonials></Testimonials>
+      {/* newsletter */}
+      <Newsletter></Newsletter>
     </div>
   );
 };

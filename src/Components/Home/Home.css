@@ -1,5 +1,5 @@
 .banner-container {
-  background-image: url("https://www.aamc.org/sites/default/files/styles/scale_and_crop_1200_x_666/public/Public%20Opinion%20Research%201200x666.jpg?itok=Z9g0DOPe");
+  background-image: url("https://lp-cms-production.imgix.net/2021-04/500pxRF_100050585.jpg?auto=format&fit=crop&sharp=10&vib=20&ixlib=react-8.6.4&w=850");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,13 +9,7 @@
 }
 
 .banner {
-  background: linear-gradient(200deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
-  color: whitesmoke;
-  min-height: 60vh;
-}
-
-.banner-card {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-  border: 2px solid rgba(128, 128, 128, 0.575);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9));
+  color: white;
+  min-height: 70vh;
 }
