@@ -81,7 +81,6 @@ const Testimonials = () => {
                       &rdquo;
                     </em>
                   </p>
-
                   <h6 className="text-end pe-4">
                     <em>--Johanna</em>
                   </h6>

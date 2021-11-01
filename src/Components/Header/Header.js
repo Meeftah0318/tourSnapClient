@@ -1,8 +1,10 @@
 import React from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
+import useFirebase from "../../Hooks/useFirebase";
 
 const Header = () => {
+  const { user, logOut, signInWithGoogle } = useFirebase();
   return (
     <div>
       <div className="primary-text">
@@ -55,7 +57,32 @@ const Header = () => {
                   </ul>
                 </div>
               </div>
-              <div className="d-flex justify-content-end mt-2"></div>
+              <div className="d-flex justify-content-end mt-2">
+                {!user.email ? (
+                  <button
+                    onClick={signInWithGoogle}
+                    className="btn btn-primary"
+                  >
+                    {" "}
+                    <Link
+                      className="text-decoration-none text-white "
+                      to="login"
+                    >
+                      Google Sign In
+                    </Link>{" "}
+                  </button>
+                ) : (
+                  <button onClick={logOut} className="btn btn-danger">
+                    Logout {user.displayName}
+                    {/* {" "}
+                    <Link
+                      className="text-decoration-none text-white "
+                      to="login"
+                    >
+                    </Link>{" "} */}
+                  </button>
+                )}
+              </div>
             </div>
           </div>
         </nav>
