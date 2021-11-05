@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import useFirebase from "../../Hooks/useFirebase";
 
 const Header = () => {
-  const { user, logOut, signInWithGoogle } = useFirebase();
+  const { user, logOut } = useFirebase();
   return (
     <div>
       <div className="primary-text">
@@ -18,7 +18,7 @@ const Header = () => {
                 to="home"
               >
                 <span className="me-2">
-                  <i class="fas fa-umbrella-beach"></i>
+                  <i className="fas fa-umbrella-beach"></i>
                 </span>
                 TourSnap
               </Link>
@@ -46,34 +46,34 @@ const Header = () => {
                       Home
                     </Link>
                     <Link className="ms-5" to="packages">
-                      Destinations
+                      Packages
                     </Link>
-                    <Link className="ms-5" to="about">
-                      About Us
+                    <Link className="ms-5" to="addPackage">
+                      Add Package
                     </Link>
-                    <Link className="ms-5" to="contact">
-                      Contact Us
+                    <Link className="ms-5" to="manageDB">
+                      Manage DB
                     </Link>
                   </ul>
                 </div>
               </div>
               <div className="d-flex justify-content-end mt-2">
                 {!user.email ? (
-                  <button
-                    onClick={signInWithGoogle}
-                    className="btn btn-primary"
-                  >
+                  <button className="btn btn-primary rounded-pill px-4">
                     {" "}
                     <Link
                       className="text-decoration-none text-white "
                       to="login"
                     >
-                      Google Sign In
+                      Sign In
                     </Link>{" "}
                   </button>
                 ) : (
-                  <button onClick={logOut} className="btn btn-danger">
-                    Logout {user.displayName}
+                  <button
+                    onClick={logOut}
+                    className="btn btn-outline-danger rounded-pill px-4"
+                  >
+                    Logout
                     {/* {" "}
                     <Link
                       className="text-decoration-none text-white "

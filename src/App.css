@@ -6,6 +6,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.container-div {
+  min-height: 60vh;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

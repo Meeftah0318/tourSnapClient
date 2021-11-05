@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Package = props => {
-  const { id, destination, price, country, image } = props.pkg;
+  const { _id, destination, price, country, image } = props.pkg;
   return (
     <div className="container service-container">
       <div className="card-group mx-2">
@@ -30,7 +30,7 @@ const Package = props => {
               <button className="btn my-1 px-5 btn-primary rounded-pill">
                 <Link
                   className="text-decoration-none  text-white"
-                  to={`/${id}`}
+                  to={`/${_id}`}
                 >
                   Book Now
                 </Link>
